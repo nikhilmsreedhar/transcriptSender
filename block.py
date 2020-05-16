@@ -9,9 +9,9 @@ class Block:
         current.timeStamp = timeStamp
         current.hash = current.getHash()
 
-    @staticmethod
-    def create_gen_block():
-        return Block("0", "0", datetime.datetime.now(), 0)
+    # @staticmethod
+    # def create_gen_block():
+    #     return Block("0", "0", datetime.datetime.now(), 0)
 
     def getHash(current):
         header_bin = (str(current.prevHash) +
